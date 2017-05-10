@@ -1,0 +1,15 @@
+<form ng-submit="insertar()">
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Nombre" ng-model="producto.nombre">
+    </div>
+    <div class="form-group">
+        <label for="unidades">Unidades</label>
+        <input type="number" min="1" class="form-control" id="unidades" placeholder="Unidades" ng-model="producto.unidades">
+    </div>
+    <div class="form-group">
+        <label for="precio">Precio</label>
+        <input type="number" min="0" step="0.01" class="form-control" id="precio" placeholder="Precio" ng-model="producto.precio">
+    </div>
+    <input type="submit" class="btn btn-default" value="Añadir">
+</form>

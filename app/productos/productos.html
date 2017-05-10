@@ -1,0 +1,12 @@
+<table class="table">
+    <thead>
+    <td>Nombre</td>
+    <td>Unidades</td>
+    <td>Precio</td>
+    </thead>
+    <tr ng-repeat="producto in productos">
+        <td>{{producto.nombre}}</td>
+        <td>{{producto.unidades | number}}</td>
+        <td>{{producto.precio | currency : 'EUR'}}</td>
+    </tr>
+</table>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <!--JQuery-->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Angular node module-->
+    <script src="../node_modules/angular/angular.min.js"></script>
+    <script src="../node_modules/angular-route/angular-route.min.js"></script>
+    <link rel="stylesheet" href="app.css">
+    <!--AngularJS-->
+    <script src="app.js"></script>
+    <script src="service-productos.js"></script>
+    <script src="inicio/inicio.js"></script>
+    <script src="productos/productos.js"></script>
+    <script src="nuevo-producto/nuevo-producto.js"></script>
+    <script src="service-productos.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>AngularJS</h1>
+            <ul class="nav nav-tabs">
+                <li role="presentation" class="active" id="nav-inicio"><a href="#!/inicio">Inicio</a></li>
+                <li role="presentation" id="nav-productos"><a href="#!/productos">Tabla de Productos</a></li>
+                <li role="presentation" id="nav-nuevo"><a href="#!/nuevo">Nuevo Producto</a></li>
+            </ul>
+            <div class="contenido" ng-view></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
